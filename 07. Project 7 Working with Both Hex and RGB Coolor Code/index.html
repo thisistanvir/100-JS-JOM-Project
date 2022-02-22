@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+		<title>Project 7</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="./app.js"></script>
+	</head>
+	<body id="root">
+		<div class="container">
+			<h1>Working with both Hex and RGB color code.</h1>
+
+			<div class="label-group">
+				<label for="output">Hex Code</label>
+			</div>
+			<div class="input-group">
+				<div class="input-icon">#</div>
+				<input type="text" value="000000" id="output" />
+				<button id="copy-btn" title="copy the clipboard">copy color</button>
+			</div>
+
+			<div class="label-group">
+				<label for="output2">RGB Code</label>
+			</div>
+			<div class="input-group">
+				<!-- <div class="input-icon">#</div> -->
+				<input
+					type="text"
+					value="rgba(255, 255, 255, 1)"
+					id="output2"
+					disabled
+				/>
+				<button id="copy-btn2" title="copy the clipboard">copy color</button>
+			</div>
+			<button id="change-btn">Change Color</button>
+		</div>
+	</body>
+</html>
